@@ -1,0 +1,15 @@
+#gamecontainer {
+    width:800px;
+    height:600px;
+    border: 1px solid black;
+}
+
+#gamecanvas {
+    background: red;
+}
+
+/* Game Starting Menu Screen */
+#gamestartscreen {
+    text-align:center;
+    background:lightgrey;
+}

@@ -1,0 +1,36 @@
+#gamecontainer {
+    width:800px;
+    height:600px;
+    border: 1px solid black;
+}
+
+#endingscreen {
+    width:800px;
+    height:600px;
+    background: url(../images/end.png);
+    border: 1px solid black;
+}
+
+.gamelayer {
+    width:800px;
+    height:600px;
+    position:absolute;
+    display:none;
+}
+
+#gamecanvas {
+    background: lightblue;
+}
+
+/* Game Starting Menu Screen */
+#gamestartscreen {
+    text-align:center;
+    background: url(../images/first.png);
+}
+
+#gamestartscreen img {
+    position: absolute;
+    top:350px;
+    margin:10px;
+    cursor:pointer;
+}
