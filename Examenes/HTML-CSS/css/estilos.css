@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'CoelacanthRegular';
+    src: url('../fonts/Coelacanth.otf');
+}
+
+body {
+    background-color: slategrey;
+    margin: auto;
+    margin-top: 2em;
+    width: 75%;
+}
+
+.forExam {
+    background: #01395e;
+    border-color: #b9b5b5 #b9b5b5 #272525 #272525;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px 5px #000000;
+    border-width: 3px;
+    padding: 1em 1em 1em 1em;
+    font-family: 'CoelacanthRegular', normal;
+    font-size: 18pt;
+    text-align: center;
+    color: #74c925;
+    margin-bottom: 1em;
+}
+
+span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#begin{
+    display: inline;
+}
+
+#end{
+    display: none;
+}
