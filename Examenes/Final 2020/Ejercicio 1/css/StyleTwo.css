@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+body {
+    background-color: #666666;
+    margin-top: 2em;
+    margin-bottom: 6em;
+    margin-left: 8em;
+    margin-right: 4em;
+}
+
+header,
+footer {
+    text-align: left;
+}
+
+a {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+a:link {
+    color: #006666;
+}
+
+a:visited {
+    color: #4df89c;
+}
+
+a:hover {
+    color: #290333;
+}
+
+ul {
+    list-style-image: url(../imgs/bullet_accept.png);
+    list-style-position: inside;
+    background: #0688f7;
+    margin: 10px;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+}
+
+table {
+    table-layout: auto;
+    border-collapse: collapse;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-left: 15%;
+    margin-right: 15%;
+    caption-side: bottom;
+}
+
+table caption {
+    font: oblique lighter 30pt 'Satisfy';
+    text-align: left;
+}
+
+table thead {
+    font: bold 16pt 'Satisfy';
+    text-align: right;
+}
+
+td {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 10pt;
+    vertical-align: bottom;
+    text-align: center;
+    padding: 1em;
+    background-color: #700c2c;
+    border: 5px solid #bd640b;
+}
+
+.myparagraph {
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bolder;
+    font-size: 25pt;
+}
+
+.myheader {
+    font-family: 'Satisfy', cursive;
+    font-variant: small-caps;
+    color: #0d5405;
+    margin-bottom: 2em;
+}
+
+h1.myheader {
+    font-size: 36pt;
+}
+
+h2.myheader {
+    font-size: 30pt;
+}
+
+h3.myheader {
+    font-size: 24pt;
+}
+
+h4.myheader {
+    font-size: 20pt;
+}
+
+h5.myheader {
+    font-size: 16pt;
+}
+
+h6.myheader {
+    font-size: 12pt;
+}
+
+.divOne {
+    background: #ffff00;
+    border-color: #20591b #20591b #260784 #260784;
+    border-radius: 60px;
+    border-style: groove;
+    border-width: 3px;
+    box-shadow: 10px 10px 50px 15px #3588a2;
+    line-height: 2;
+    padding: 2em 2em 1em 1em;
+    margin: 4em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    color: #7f2828;
+}
+
+.myli {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.highlight {
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+    font-size: 16pt;
+    text-decoration: underline;
+}
+
+#specialDiv {
+    background: #420c48;
+    border: 4px dotted;
+    border-color: #ffffff #ffffff #000000 #000000;
+    border-radius: 40px;
+    box-shadow: 20px 20px 30px 10px #000000;
+    padding: 5px 10px 5px 10px;
+    margin: 2em;
+    font-family: 'Satisfy', cursive;
+    font-size: 18pt;
+    text-align: left;
+    color: #ffffff;
+}

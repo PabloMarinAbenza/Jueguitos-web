@@ -1,0 +1,7 @@
+Tal y como el código está estructurado (además de por mera funcionalidad), sería incorrecto tratar de sustituir la instrucción "craft = game.add.sprite(x, y, 'craft');" por "craft = game.add.image(x, y, 'craft');". Esto se debe a que los sprites y las imágenes, si bien visualmente comparten ciertas similitudes, distan mucho de funcionar de la misma manera.
+
+Una imagen es un objeto (relativamente ligero) que podemos utilizar para mostrar algo por pantalla, siempre que ese "algo" no precise de animaciones o físicas. Las imágenes se pueden rotar, escalar, recortar, así como recibir eventos, lo que las hace una muy buena solución para mostrar logos, fondos o botones.
+
+Un sprite, por contrapartida, forma parte del núcleo jugable, pudiéndose asimilar a los gameObjects de otros programas y motores como Unity. Tienen un uso mucho más extendido, y esto se debe a que contienen propiedades adicionales que dan coherencia al gameplay, ya sean físicas (sprite.body), de entrada (sprite.input), de eventos (sprite.events) o de animaciones (sprite.animations), entre muchas otras. Su forma más básica consiste en un set de coordenadas y una textura, que se renderiza sobre un canvas.
+
+Cambiar el sprite de "craft" por una imagen, por ende, significaría echar por tierra todo el trabajo de animación y físicas empleado para la construcción de "craft", por lo que su sustitución o intercambio conllevaría un proceso algo más largo que una mera modificación en la instrucción.
