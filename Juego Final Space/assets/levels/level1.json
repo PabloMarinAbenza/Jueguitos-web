@@ -1,0 +1,8 @@
+{
+    "wave":
+    [{"array":["dog", "coffee", "game"], "wavelenght":3, "speed":30},
+    {"array":["water", "broom", "ship", "force", "issue"], "wavelenght":5, "speed":40},
+    {"array":["pitcher", "shoe", "rain", "frost", "iguanas", "urn", "drink"], "wavelenght":7, "speed":50},
+    {"array":["thunder", "finger", "growl", "koala", "death", "shave", "widow", "job", "like"], "wavelenght":9, "speed":60},
+    {"array":["extra", "hog", "broil", "pizza", "rookie", "mourn", "fire", "chum", "stew", "drain", "woods", "geode"], "wavelenght":12, "speed":70}]
+}
