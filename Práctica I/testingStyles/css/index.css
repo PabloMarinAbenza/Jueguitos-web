@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Risque');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body {
+    background-color: #d4cdc0;
+    margin: 5em;
+}
+
+header,
+footer {
+    margin: 30px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+a:link {
+    color: #16535e;
+}
+
+a:visited {
+    color: #ffcc00;
+}
+
+a:hover {
+    color: brown;
+}
+
+ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    background: #e6fb0d;
+    margin: 40px;
+}
+
+ol {
+    list-style-type: lower-alpha;
+}
+
+table {
+    table-layout: auto;
+    border-spacing: 10px;
+    border-collapse: separate;
+    width: 80%;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    margin-left: 50px;
+}
+
+table caption {
+    font: normal small-caps bold 25pt 'Indie Flower';
+}
+
+table thead {
+    font: bolder 18pt 'Indie Flower';
+    text-align: center;
+}
+
+td {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    vertical-align: middle;
+    padding: .5em;
+    background-color: #ffff99;
+    border: 2px solid #e66d1e;
+}
+
+.myparagraph {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 30pt;
+}
+
+.myheader {
+    font-family: 'Indie Flower', cursive;
+    color: #ab10b9;
+}
+
+h1.myheader {
+    font-size: 40pt;
+    text-decoration: underline;
+}
+
+h2.myheader {
+    font-size: 34pt;
+    text-decoration: underline;
+}
+
+h3.myheader {
+    font-size: 30pt;
+    text-decoration: underline;
+}
+
+h4.myheader {
+    font-size: 26pt;
+    text-decoration: underline;
+}
+
+h5.myheader {
+    font-size: 22pt;
+    text-decoration: underline;
+}
+
+h6.myheader {
+    font-size: 18pt;
+    text-decoration: underline;
+}
+
+.divOne {
+    background: #ffffff;
+    border-color: #c70000 #c70000 #940000;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 10px;
+    box-shadow: 0 10px 20px #a10000e5;
+    line-height: 1.4;
+    padding: 30px 50px 10px 25px;
+    margin: 2em;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    text-align: justify;
+    color: darkred;
+}
+
+.myli {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.highlight {
+    font-family: 'Risque', cursive;
+    font-weight: bolder;
+    font-size: 14pt;
+    letter-spacing: 1ex;
+}
+
+#specialDiv {
+    background: #ffbc70;
+    border: solid;
+    border-color: #ae0f1f #ae0f1f #160d77 #160d77;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    margin: 0m;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: justify;
+    color: #5c5c5c;
+}

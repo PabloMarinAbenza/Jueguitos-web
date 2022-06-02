@@ -1,0 +1,55 @@
+#books {
+    font-size: 30pt;
+    color: #ff00cc;
+    }
+
+.resources {
+    font-variant: small-caps;
+    }
+
+.books {
+    color: blue;
+}
+
+/* unvisited link */
+a:link {
+  color: orange;
+}
+
+/* visited link */
+a:visited {
+  color: orange;
+}
+
+/* mouse over link */
+a:hover {
+  color: purple;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+#background {
+    color: blue;
+    background-color: orange;
+}
+
+#animacion{
+  width: 500px;
+  height: 100px;
+  background-color: rgba(204, 0, 255, 0.459);
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+
+  @keyframes example {
+    0%   {left:0%; transform: translate(0px);}
+    25%  {left:25%; transform: rotate(90deg);}
+    50%  {left:50%; transform: translate(50px);}
+    75%  {left:75%; transform: translate(25px);}
+    100% {left:0%; transform: translate(0px);}
+  }

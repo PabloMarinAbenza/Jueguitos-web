@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Venga ese cinquillo</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/basic.css">
+        <style type="text/css">
+
+        </style>
+    </head>
+    <body> <!-- This is a comment in HTML -->
+        <h1>Web games with HTML</h1>
+        <h1 id="books">Useful books</h1>
+        <div id = "background" >
+            <input type="checkbox"id="back-gray"value="gray"onclick=setGray()> Gay background <br>
+
+            <script>
+                function setGray()
+                {
+                let color="white"; // value if not checked
+                if (document.getElementById("back-gray").checked)
+                color="gray"; // value if checked
+                // get element with desired id
+                const e = document.getElementById("background");
+                // set the background color to that element
+                e.style["background-color"] = color;
+                }
+            </script>
+
+            <h1 class="resources">Web Links</h1>
+            <h1 class="resources books" style="color:pink">
+                Useful Books
+                </h1>
+        </div>
+        <p>We will need to learn:</p>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <div class="toggleSwitch">Sound
+            <div onclick="switchToggle(this)" class="switchOn" id="switch1">on</div>
+        </div>
+
+        <script>
+            function switchToggle()
+            {
+                if (document.getElementById('switch1').style.marginLeft == "3px"){
+                    document.getElementById('switch1').style.marginLeft = "123px";
+                    document.getElementById('switch1').style.backgroundImage = "linear-gradient(greenyellow, green)";
+                    document.getElementById('switch1').textContent = "on";
+                }
+                else{
+                    document.getElementById('switch1').style.marginLeft = "3px";
+                    document.getElementById('switch1').style.backgroundImage = "linear-gradient(lightcoral, red)";
+                    document.getElementById('switch1').textContent = "off";
+
+                }
+            }
+        </script>
+
+
+        <img id="animation" src="https://www.hyperhype.es/wp-content/uploads/2020/02/PlayStation-Now-300x300.png">Esto es una imagen pero que flipas.</img>
+
+        <div></div>
+        <canvas id="myCanvas"width="700" height="300"style="border:1px solid #000000;">
+            <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(200, 100, 100, 0, 2 * Math.PI);
+
+            // Fill
+            ctx.fillStyle = "rgba(255, 150, 255, 0.5)";
+            ctx.fill();
+            ctx.stroke();
+
+            </script>
+
+        Your browser does not support the HTML5 canvas tag.
+        </canvas>
+
+        <input type="range" id="myRange" onchange=setOpacity()></input>        
+
+        <div></div>
+        <table style="width:0%">
+            <tr>
+                <th>
+                    <canvas id="myCanvas2"width="200" height="200"style="border:1px solid #000000;">
+                        <script>
+                        var c2 = document.getElementById("myCanvas2");
+                        var ctx2 = c2.getContext("2d");
+                        ctx2.beginPath();
+                        ctx2.arc(95, 50, 40, 0, 2 * Math.PI);
+            
+                        // Fill
+                        ctx2.fillStyle = "rgba(255, 150, 255, 0.5)";
+                        ctx2.fill();
+                        ctx2.stroke();
+            
+                        </script>
+            
+                    Your browser does not support the HTML5 canvas tag.
+                    </canvas>
+
+                </th>
+                <th>
+                    
+                    <canvas id="myCanvas3"width="200" height="200"style="border:1px solid #000000;">
+                        <script>
+                        var c3 = document.getElementById("myCanvas3");
+                        var ctx3 = c3.getContext("2d");
+                        ctx3.beginPath();
+                        ctx3.arc(95, 50, 40, 0, 2 * Math.PI);
+            
+                        // Fill
+                        ctx3.fillStyle = "rgba(255, 150, 255, 0.5)";
+                        ctx3.fill();
+                        ctx3.stroke();
+                        
+                        </script>
+            
+                    Your browser does not support the HTML5 canvas tag.
+                    </canvas>
+                </th> 
+            </tr>
+            <tr>
+                <td>
+                    <canvas id="myCanvas4"width="200" height="200"style="border:1px solid #000000;">
+                        <script>
+                        var c4 = document.getElementById("myCanvas4");
+                        var ctx4 = c4.getContext("2d");
+                        ctx4.beginPath();
+                        ctx4.arc(95, 50, 40, 0, 2 * Math.PI);
+            
+                        // Fill
+                        ctx4.fillStyle = "rgba(255, 150, 255, 0.5)";
+                        ctx4.fill();
+                        ctx4.stroke();
+            
+                        </script>
+            
+                    Your browser does not support the HTML5 canvas tag.
+                    </canvas>
+                </td>
+                <td>
+                    <canvas id="myCanvas5"width="200" height="200"style="border:1px solid #000000;">
+                        <script>
+                        var c5 = document.getElementById("myCanvas5");
+                        var ctx5 = c.getContext("2d");
+                        ctx5.beginPath();
+                        ctx5.arc(95, 50, 40, 0, 2 * Math.PI);
+            
+                        // Fill
+                        ctx5.fillStyle = "rgba(255, 150, 255, 0.5)";
+                        ctx5.fill();
+                        ctx5.stroke();
+            
+                        </script>
+            
+                    Your browser does not support the HTML5 canvas tag.
+                    </canvas>
+                </td>
+            </tr>
+        </table>
+
+        <script>
+            let slider;
+            let random_x = 100;
+            let random_y = 100;
+            let random_size = 100;
+
+            setOpacity();
+
+            function setOpacity()
+            {
+                slider = document.getElementById("myRange").value;
+                redraw();
+            }
+
+            function redraw()
+            {
+                ctx.alpha = slider/100;
+                console.log(ctx.alpha);
+
+                const context = myCanvas.getContext('2d');
+                context.clearRect(0, 0, myCanvas.width, myCanvas.height);
+
+                ctx.fillStyle = "rgba(255, 150, 255," + ctx.alpha + ")";
+                ctx.fill();
+                ctx.stroke();
+
+                //MODS (Table)
+
+                //---
+
+                
+                random_x = Math.floor(Math.random() * 100);
+                random_y = Math.floor(Math.random() * 100);
+                random_size = Math.floor(Math.random() * 250);
+                console.log(random_x + ' ' + random_y);
+
+                ctx2.moveTo(random_x, random_y);
+                //ctx2.fillStyle = "rgba(255, 150, 255," + ctx.alpha + ")";
+
+                //---
+
+                random_x = Math.floor(Math.random() * 100);
+                random_y = Math.floor(Math.random() * 100);
+                random_size = Math.floor(Math.random() * 250);
+                console.log(random_x + ' ' + random_y);
+
+                ctx3.moveTo(random_x, random_y);
+
+                //---
+                
+                random_x = Math.floor(Math.random() * 100);
+                random_y = Math.floor(Math.random() * 100);
+                random_size = Math.floor(Math.random() * 250);
+                console.log(random_x + ' ' + random_y);
+
+                ctx4.moveTo(random_x, random_y);
+
+                //---
+
+                random_x = Math.floor(Math.random() * 100);
+                random_y = Math.floor(Math.random() * 100);
+                random_size = Math.floor(Math.random() * 250);
+                console.log(random_x + ' ' + random_y);
+
+                ctx5.moveTo(random_x, random_y);
+
+                //---
+            }
+    </script>
+
+    </body>
+</html>

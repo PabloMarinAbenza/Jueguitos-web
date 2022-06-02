@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>A basic HTML document</title>
+            <meta charset="UTF-8">
+            <link rel="stylesheet"
+            type="text/css"
+            href="css/basic.css">
+            <style type="text/css"> </style>
+        </head>
+            <body> <!-- This is a comment in HTML -->
+            <h1 class="resources">A full de Juegos Web</h1>
+            <h1 class="resources books" style="color:pink">Holi</h1>
+            <p><b><a href="https://hyperhype.es" target="_blank"><h1 id="books">Pincha aquí porfi</h1></a></b></p>
+            <button type="button" onclick="alert('Te quiero un huevo <3')">Dame amor</button>
+
+            <p>We will need to learn:</p>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <div id="background">
+                <h3>C viene el cambio</h3>
+                <p>No estás preparade hazme caso.</p>
+
+                <input type="checkbox" id="back-gray" value="gray" onclick=setGray()> Dale bro <br>
+
+                <script>
+                    function setGray()
+                    {
+                    let color="orange"; // value if not checked
+                    if (document.getElementById("back-gray").checked)
+                    color="gray"; // value if checked
+                    // get element with desired id
+                    const e = document.getElementById("background");
+                    // set the background color to that element
+                    e.style["background-color"] = color;
+                    }
+                </script>
+            </div>
+
+            <div id="animacion">
+                <h3>Esto se va a descontrolaaar</h3>
+                <img src="https://www.hyperhype.es/wp-content/uploads/2017/12/HyperHype-def-letras-3-sin-subtitulo-e1516965400811.jpg" alt="Logo HH">
+            </div>
+            <div></div>
+            <canvas id="myCanvas" width="400" height="300" style="border:1px solid #d3d3d3;">
+                Your browser does not support the HTML5 canvas tag.
+            </canvas>
+
+            <script>
+                var objeto_canvas_1 = $('myCanvas');
+			    if ($(objeto_canvas_1)[0].getContext) var contexto_canvas_1 = $(objeto_canvas_1)[0].getContext('2d');
+                contexto_canvas_1.beginPath();
+                contexto_canvas_1.fillStyle = 'rgba(228, 25, 34, 0.6)';
+                contexto_canvas_1.arc(210, 60, 50, D2R(0), D2R(360));
+                contexto_canvas_1.fill();
+            </script>
+    </body>
+</html>
