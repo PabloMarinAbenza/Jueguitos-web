@@ -1,0 +1,35 @@
+header {
+    margin-bottom: 2em;
+    font-family: "Times", sans-serif;
+    font-size: 16pt;
+    text-align: center;
+}
+
+footer {
+    margin-top: 2em;
+    font-family: "Times", sans-serif;
+    font-size: 16pt;
+    text-align: center;
+}
+
+canvas {
+    border: slateblue 3px solid;
+    background-color: #e6e6e6;
+    margin-left: 2em;
+}
+
+#chrono {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 12pt;
+    margin-left: 5em;
+    text-align: left;
+    color: #79091c;
+}
+
+#livesleft{ /*CAMBIO*/
+    margin-left: 2em;
+    margin-top: 1em;
+    padding: 0.2em;
+    vertical-align: middle;
+    display: inline-block;
+}
