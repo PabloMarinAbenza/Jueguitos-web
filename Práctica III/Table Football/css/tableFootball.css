@@ -1,0 +1,133 @@
+#title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#footer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#game {
+    position: relative;
+    width: 800px;
+    height: 400px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#playground {
+    background: url(../imgs/playground.png);
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#ball {
+    background: #ffbbbb;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 150px;
+    top: 100px;
+    border-radius: 10px;
+}
+
+.ballAspect{
+    background: #ffbbbb;
+    width: 20px;
+    height: 20px;
+    left: 150px;
+    top: 100px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#ballsRemaining{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paddle {
+    background-size: contain;
+    top: 70px;
+    position: absolute;
+    width: 30px;
+    height: 70px;
+}
+
+#paddleA {
+    left: 50px;
+    background-image: url(../imgs/football-player-left.png);
+}
+
+#paddleB {
+    right: 50px;
+    background-image: url(../imgs/football-player-right.png);
+}
+
+.paddle-hand {
+    background: url(../imgs/football-player-hand.png) 50% 0 repeat-y;
+    background-size: contain;
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.left.paddle-hand {
+    left: 50px;
+}
+
+.right.paddle-hand {
+    right: 50px;
+}
+
+#OST{
+    margin-left: auto;
+    margin-right: auto;
+    visibility: hidden;
+}
+
+#header{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Score board */
+#scoreboard {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    color: lightgrey;
+}
+
+#endScreen {
+    position: relative;
+    width: 800px;
+    height: 400px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background: url(https://i.ytimg.com/vi/JjxB_1boZrE/maxresdefault.jpg);
+
+    text-align: center;
+    vertical-align: text-bottom;
+    font-family: "Comic Sans MS", sans-serif;
+    font-weight: bolder;
+    font-size: 24pt;
+    font-variant: small-caps;
+
+    display: none;
+}

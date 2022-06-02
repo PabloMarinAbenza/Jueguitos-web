@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table Football Game</title>
+    <link rel="stylesheet" href="css/tableFootball.css">
+</head>
+
+<body>
+    <header>
+        <h1>Table Football</h1>
+    </header>
+
+    <div id="game">
+        <!-- game elements to be here -->
+        <div id="playground">
+            <div class="paddle-hand right"></div>
+            <div class="paddle-hand left"></div>
+            <div id="paddleA" class="paddle"></div>
+            <div id="paddleB" class="paddle"></div>
+            <div id="ball"></div>
+        </div>
+        <div id="scoreboard" onclick=changeName()>
+            <div class="score"> Computer : <span id="score-a">0</span></div>
+            <div id="playerName" class="score"> Player : <span id="score-b">0</span></div>
+        </div>
+    </div>
+
+    <div id="counter">
+        <h3>Balls remaining: </h3>
+    </div>
+
+    <div id="endgame"> Has perdido máquina!!! <div>
+
+    <footer>
+        Table Football Game: a simple JavaScript game.
+    </footer>
+    <script src="js/tablefootball.js"></script>
+</body>
+
+</html>

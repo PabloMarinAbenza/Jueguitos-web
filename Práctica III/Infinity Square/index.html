@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infinity Square</title>
+    <link rel="stylesheet" href="css/iftysquare.css">
+</head>
+
+<body>
+    <header>
+        Drive the square to avoid obstacles!
+    </header>
+    <p id="chrono"></p>
+    <div id="initial">
+        <div style="margin-bottom: 2em;">
+            <span style="font-size: 18pt; font-weight: bolder; font-variant: small-caps;">Choose level:</span>
+        </div>
+        <label class="radioGroup">
+            <input type="radio" name="level" value="1">
+            Ponlo Easy
+        </label>
+        <label class="radioGroup">
+            <input type="radio" checked="checked" name="level" value="2">
+            Carpe Diem
+        </label>
+        <label class="radioGroup">
+            <input type="radio" name="level" value="3">
+            Yipi kai yay
+        </label>
+        <div style="margin-top: 2em;">
+            <img src="images/play.png" onclick="start()">
+        </div>
+    </div>
+    <div id="gameplay"></div>
+    <div id="endScreen"></div>
+    <div id="vidasPadre">
+        <h3>Vidas:</h3>
+        <img id="vida3" src ='images/nave.png' alt="VidaNave3">
+        <img id="vida2" src ='images/nave.png' alt="VidaNave2">
+        <img id="vida1" src ='images/nave.png' alt="VidaNave1">
+    </div>
+    <footer>
+        Use the arrow keys to drive the square
+    </footer>
+    <script src="js/obfuscated.js"></script>
+</body>
+
+</html>

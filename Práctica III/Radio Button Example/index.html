@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Radio button Example</title>
+    <link rel="stylesheet" href="css/rules.css">
+</head>
+
+<body>
+    <div id="initialScreen">
+        <div style="margin-bottom: 2em;">
+            <span style="font-size: 18pt; font-weight: bolder; font-variant: small-caps;">Choose level:</span>
+        </div>
+        <label class="radioGroup">
+            <input type="radio" name="level" value="1">
+            This is for level 1
+        </label>
+        <label class="radioGroup">
+            <input type="radio" checked="checked" name="level" value="2">
+            This is for level 2
+        </label>
+        <label class="radioGroup">
+            <input type="radio" name="level" value="3">
+            This is for level 3
+        </label>
+        <label class="radioGroup">
+            <input type="radio" name="level" value="4">
+            This is for level 4
+        </label>
+        <div style="margin-top: 2em;">
+            <img src="imgs/play.png" onclick="start()">
+        </div>
+    </div>
+    <div id="gameScreen">
+        <div id="texto"></div>
+        <div id="boton"></div>
+    </div>
+    <div id="endScreen"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+#initialScreen {
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#endScreen {
+    width: 600px;
+    height: 600px;
+    background: url(../imgs/gameOver.png);
+    text-align: center;
+    vertical-align: text-bottom;
+    font-family: "Comic Sans MS", sans-serif;
+    font-weight: bolder;
+    font-size: 24pt;
+    font-variant: small-caps;
+    display: none;
+}
+
+#gameScreen {
+    width: 70%;
+    margin-top: 10em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#texto {
+    font-family: "Comic Sans MS", sans-serif;
+    font-weight: bold;
+    font-size: 20pt;
+    background-color: lightsalmon;
+    color: crimson;
+}
+
+#boton {
+    margin-top: 5em;
+}
+
+.radioGroup {
+    display: block;
+    position: relative;
+    padding-left: 1em;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+/* Resize the radio buttons */
+input[type="radio"] {
+    transform: scale(1.3);
+}

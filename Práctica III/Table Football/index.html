@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table Football Game</title>
+    <link rel="stylesheet" href="css/tableFootball.css">
+</head>
+
+<body>
+    <header id = "title">
+        <h1>C90 Football</h1>
+    </header>
+
+    <div id="game">
+        <!-- game elements to be here -->
+        <div id="playground">
+            <div class="paddle-hand right"></div>
+            <div class="paddle-hand left"></div>
+            <div id="paddleA" class="paddle"></div>
+            <div id="paddleB" class="paddle"></div>
+            <div id="ball"></div>
+        </div>
+        <div id="scoreboard">
+            <div class="score"> A : <span id="score-a">0</span></div>
+            <div class="score"> B : <span id="score-b">0</span></div>
+        </div>
+    </div>
+
+    <div id="ballsRemaining">
+        <h3>Balls remaining:</h3>
+    </div>
+
+    <div id="OST">
+        <audio controls autoplay>
+            <source src="C90.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div id="gameOver"></div>
+
+    <footer id="footer">
+        Table Football Game: a simple JavaScript game.
+    </footer>
+
+    <script src="js/tablefootball.js"></script>
+</body>
+
+</html>
